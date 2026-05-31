@@ -1,0 +1,79 @@
+---
+title: Authorizations
+description: Track payer approvals, coverage limits, and renewal dates
+---
+
+import { Callout, Tabs, Steps } from '@/components';
+
+# Authorizations
+
+> ⚠️ **Read-Only Documentation Notice**  
+> This page was generated through passive observation of publicly accessible UI elements. No data was injected, submitted, or modified during documentation creation.
+
+## Overview
+
+Manage insurance authorizations, Medicaid waivers, and private pay approvals for member services.
+
+## Key Features
+
+<Tabs>
+  <Tab title="Functionality">
+    - Verify coverage eligibility
+    - Track authorization expiration dates
+    - Upload supporting documentation
+    - Set renewal reminders
+  </Tab>
+  <Tab title="User Roles">
+    - Admin: Full CRUD
+    - Billing: Read + Update
+    - Clinical: Read-only
+  </Tab>
+  <Tab title="Related Modules">
+    Member Directory, Claims & Billing, Payer Management
+  </Tab>
+</Tabs>
+
+## Workflow
+
+<Steps>
+  <Step title="Access">
+    Navigate to Members → Member Directory → Select member → Authorizations tab
+  </Step>
+  <Step title="Primary Actions">
+    Search authorizations by payer/date; Upload new approval letters; Flag expiring items
+  </Step>
+  <Step title="Outputs">
+    Authorization status report; Expiration alert list; Payer compliance summary
+  </Step>
+</Steps>
+
+## UI Elements Observed
+
+| Element | Type | Purpose | Notes |
+|---------|------|---------|-------|
+| Authorization Status Badge | Visual indicator | Show approval state | Green=Active, Yellow=Expiring Soon, Red=Expired |
+| Payer Filter Dropdown | Selection control | Filter by insurance provider | Includes Aetna, BCBS, Cigna, Medicaid, Medicare |
+
+## Compliance & Security
+
+<Callout type="info">
+  Authorization data is PHI-adjacent. Access logged per HIPAA. Export requires 'Billing Export' role permission.
+</Callout>
+
+## Troubleshooting
+
+| Authorization not visible | Verify member is assigned to your caseload; Check payer contract status in Licensing module |
+
+## Related Documentation
+
+<Tabs>
+  <Tab title="Related Docs">
+    - [Member Directory](./)
+    - Payer Management (see the Licensing section)
+    - Claims Upload (see the Claims & Billing section)
+  </Tab>
+</Tabs>
+
+---
+
+*Last updated: 2026-05-31 • Generated via read-only observation*

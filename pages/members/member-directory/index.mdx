@@ -1,0 +1,103 @@
+﻿
+---
+
+### `pages/members/member-directory/index.mdx`
+
+```mdx
+---
+title: Member Directory
+description: Central registry for all members with tabbed views for comprehensive management
+---
+
+# Member Directory
+
+> ⚠️ **Read-Only Documentation Notice**  
+> This page was generated through passive observation of publicly accessible UI elements. No data was injected, submitted, or modified during documentation creation.
+
+## Overview
+
+The Member Directory serves as the central registry for all healthcare recipients, providing a unified view with 13+ tabbed sections for granular management of member data, services, and communications.
+
+## Tab Structure Observed
+
+| Tab | Purpose | Key Actions |
+|-----|---------|------------|
+| **Members** | Master list view | Search, filter, status updates, new admission entry |
+| **Authorizations** | Payer approval tracking | Verify coverage, track expiration, upload documentation |
+| **Charts** | Clinical documentation | View/upload medical records, progress notes, assessments |
+| **Service Items** | Billable service catalog | Assign services to members, track utilization |
+| **Assignments** | Staff-to-member mapping | Assign caregivers, schedule visits, manage coverage |
+| **Communications** | Message history | Log calls, emails, family updates; internal notes |
+| **Practitioner Statements** | Provider documentation | Upload physician orders, specialist reports |
+| **Update Counter** | Change tracking | Audit trail of record modifications |
+| **Orientations** | Member onboarding | Track completion of intake orientations |
+| **Sup Visits** | Supervisory visit logs | Document oversight visits, compliance checks |
+| **Engagement** | Interaction metrics | Track family communication, satisfaction indicators |
+| **Storage Locations** | Physical record tracking | Locate paper files, backup media, archived documents |
+| **Map** | Geographic visualization | View member locations, optimize travel routes |
+
+## Primary Workflow: New Admission
+
+<Steps>
+  <Step title="1. Initiate Admission">
+    Navigate to Members → Member Directory → Click "New Admission and Intakes" panel
+  </Step>
+  <Step title="2. Enter Demographics">
+    Complete required fields: Name, DOB, Address, Emergency Contact, Payer Information
+  </Step>
+  <Step title="3. Assign Services">
+    Select applicable service items from catalog; link to authorization records
+  </Step>
+  <Step title="4. Schedule Orientation">
+    Assign to Orientations tab; notify assigned caregiver via Communications tab
+  </Step>
+  <Step title="5. Activate Record">
+    Update status to "Active"; record appears in All Members list with timestamp
+  </Step>
+</Steps>
+
+## Search & Filter Capabilities
+
+- **Text Search**: Name, MRN, address, phone
+- **Status Filters**: Active, Pending, Discharged, On Hold
+- **Date Filters**: Admission date, last service date, authorization expiry
+- **Custom Views**: Save filtered views for team sharing (role-permitted)
+
+## UI Elements Observed
+
+| Element | Type | Purpose | Notes |
+|---------|------|---------|-------|
+| Member List Table | Data grid | Display member records | Sortable columns; pagination |
+| Status Badges | Visual indicator | Show member state | Color-coded: Green=Active, Yellow=Pending, Red=Discharged |
+| Quick Action Menu | Dropdown | Common per-member actions | Edit, Assign Staff, Generate Report |
+| Bulk Actions Toolbar | Button group | Multi-record operations | Export selected, update status, assign tags |
+| Tab Navigation | Horizontal tabs | Switch between data views | Persistent selection per session |
+
+## Compliance & Security
+
+<Callout type="info">
+  Member Directory access is logged at the record level. Viewing PHI triggers audit entries. Export functions require "Data Export" role permission and generate compliance reports. All modifications follow the "four-eyes principle" for critical fields.
+</Callout>
+
+## Troubleshooting
+
+| Issue | Resolution |
+|-------|-----------|
+| Member not appearing in search | Verify status filter; check if record is in "Pending" state; confirm role permissions |
+| Authorization tab empty | Ensure payer contract is active in Licensing → Payer Management |
+| Cannot assign staff | Verify staff member has active credentials in Employees → Credentials tab |
+
+## Related Documentation
+
+<Tabs>
+  <Tab title="Related Docs">
+    - [New Admission Workflow](/members/member-directory/members)
+    - [Authorization Management](/members/member-directory/authorizations)
+    - [Service Item Catalog](/members/member-directory/service-items)
+    - [Staff Assignment Rules](/employees/service-provider-directory/work-assignments)
+  </Tab>
+</Tabs>
+
+---
+
+*Last updated: 2026-05-31 • Generated via read-only observation*

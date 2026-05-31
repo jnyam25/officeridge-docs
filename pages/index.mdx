@@ -1,0 +1,83 @@
+﻿---
+title: OfficeRidge
+description: Comprehensive documentation for the OfficeRidge Healthcare Management Platform
+---
+
+# OfficeRidge Documentation
+
+> ⚠️ **Read-Only Documentation Notice**  
+> This documentation suite was generated through passive observation of publicly accessible UI elements. No data was injected, submitted, or modified during the documentation process.
+
+## Welcome
+
+This documentation covers the **OfficeRidge Enterprise Healthcare Management Platform** — a comprehensive solution for home healthcare agencies managing member care, employee compliance, operational workflows, and regulatory requirements.
+
+### 🎯 Platform Purpose
+
+- Streamline member admissions, care planning, and discharge workflows
+- Maintain employee compliance with background checks, training, and competency assessments
+- Automate task management, reporting, and inter-departmental coordination
+- Ensure adherence to HIPAA, CMS, state licensing, and emergency preparedness regulations
+- Manage financial operations including payroll, claims, vendor contracts, and tax compliance
+
+### 🗂️ Documentation Structure
+
+```mermaid
+graph LR
+    A[Home] --> B[Dashboard]
+    A --> C[Members]
+    A --> D[Employees]
+    A --> E[Operations]
+    A --> F[Finance]
+    A --> G[Compliance]
+    A --> H[System]
+    
+    C --> C1[Member Directory]
+    C --> C2[Care & Assessment]
+    C --> C3[Patient Experience]
+    
+    D --> D1[Provider Directory]
+    D --> D2[Background Checks]
+    D --> D3[Training & Competency]
+
+🔐 Access & Authentication
+
+Requirement	Details
+Authentication	Email + Password with optional MFA
+Access Method	Continue with password instead bypasses email verification codes
+Role-Based Access	Admin, Management, Clinical, Billing, Support roles
+Session	Timeout after inactivity; re-authentication required for sensitive actions
+
+🚀 Quick Start
+<Steps>
+<Step title="1. Log In">
+Navigate to `app.officeridge.com` → Enter credentials → Use password auth → Access dashboard
+</Step>
+<Step title="2. Navigate">
+Use left sidebar navigation → Expand module groups → Select specific pages/tabs
+</Step>
+<Step title="3. Explore">
+Each page contains tabbed sections → Use tabs to switch views → Export/reporting options available where indicated
+</Step>
+</Steps>
+
+📚 Getting Started Guides
+
+Audience	Recommended Starting Point
+New Administrators	Agency Settings → Role Management
+Clinical Staff	Members → Care Plans
+HR/Compliance	Employees → Background Checks
+Finance Team	Claims & Billing → Payroll
+Operations	Task Manager → Incident Reporting
+
+🔄 Maintenance & Updates
+Documentation is versioned alongside platform releases
+Changes to UI workflows trigger documentation review cycles
+Feedback widget enabled on all pages for user-reported discrepancies
+
+🆘 Support Resources
+Internal: OfficeRidge Support Page
+External: FEMA, CDC, Texas DSHS links in Emergency Prep Resources
+API Docs: https://api.officeridge.com/docs (separate authentication)
+
+Documentation generated: 2026-05-31 • Platform version: Observed UI • Next review: Quarterly

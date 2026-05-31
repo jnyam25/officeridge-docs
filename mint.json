@@ -1,0 +1,611 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "OfficeRidge Platform Docs",
+  "logo": {
+    "dark": "logos/OfficeRidge_Logo_Primary_HD.png",
+    "light": "logos/OfficeRidge_Logo_Primary_HD.png"
+  },
+  "favicon": "/favicon.ico",
+  "colors": {
+    "primary": "#0d9488",
+    "light": "#14b8a6",
+    "dark": "#0f766e",
+    "background": {
+      "light": "#ffffff",
+      "dark": "#0f172a"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@officeridge.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://app.officeridge.com"
+  },
+  "anchors": [
+    {
+      "name": "API Reference",
+      "icon": "code",
+      "url": "https://api.officeridge.com/docs"
+    },
+    {
+      "name": "Community",
+      "icon": "users",
+      "url": "https://community.officeridge.com"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Home",
+      "pages": [
+        "pages/index"
+      ]
+    },
+    {
+      "group": "Introduction",
+      "pages": [
+        "pages/introduction/index",
+        "pages/introduction/overview",
+        "pages/introduction/architecture",
+        "pages/introduction/access-limitations",
+        "pages/introduction/glossary"
+      ]
+    },
+    {
+      "group": "Dashboard",
+      "pages": [
+        "pages/dashboard/index",
+        "pages/dashboard/member-statistics",
+        "pages/dashboard/employee-statistics"
+      ]
+    },
+    {
+      "group": "Members",
+      "pages": [
+        "pages/members/index",
+        {
+          "group": "Member Directory",
+          "pages": [
+            "pages/members/member-directory/index",
+            "pages/members/member-directory/authorizations",
+            "pages/members/member-directory/charts",
+            "pages/members/member-directory/service-items",
+            "pages/members/member-directory/assignments",
+            "pages/members/member-directory/communications",
+            "pages/members/member-directory/practitioner-statements",
+            "pages/members/member-directory/update-counter",
+            "pages/members/member-directory/orientations",
+            "pages/members/member-directory/sup-visits",
+            "pages/members/member-directory/engagement",
+            "pages/members/member-directory/storage-locations",
+            "pages/members/member-directory/map"
+          ]
+        },
+        {
+          "group": "Care and Assessment",
+          "pages": [
+            "pages/members/care-and-assessment/index",
+            "pages/members/care-and-assessment/care-plans",
+            "pages/members/care-and-assessment/orientations",
+            "pages/members/care-and-assessment/supervisory-visits",
+            "pages/members/care-and-assessment/discharge-planning",
+            "pages/members/care-and-assessment/risk-assessments",
+            "pages/members/care-and-assessment/specialized-assessment",
+            "pages/members/care-and-assessment/physicians",
+            "pages/members/care-and-assessment/case-managers",
+            "pages/members/care-and-assessment/payer"
+          ]
+        },
+        {
+          "group": "Patient Experience",
+          "pages": [
+            "pages/members/patient-experience/index",
+            "pages/members/patient-experience/patient-engagement",
+            "pages/members/patient-experience/eligibility-verification",
+            "pages/members/patient-experience/external-referrals",
+            "pages/members/patient-experience/patient-rights",
+            "pages/members/patient-experience/complaints",
+            "pages/members/patient-experience/incidents",
+            "pages/members/patient-experience/devices",
+            "pages/members/patient-experience/maps",
+            "pages/members/patient-experience/satisfaction-survey"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Employees",
+      "pages": [
+        "pages/employees/index",
+        {
+          "group": "Service Provider Directory",
+          "pages": [
+            "pages/employees/service-provider-directory/index",
+            "pages/employees/service-provider-directory/new-hire-orientations",
+            "pages/employees/service-provider-directory/work-assignments",
+            "pages/employees/service-provider-directory/update-counter",
+            "pages/employees/service-provider-directory/accounts",
+            "pages/employees/service-provider-directory/credentials",
+            "pages/employees/service-provider-directory/storage-locations",
+            "pages/employees/service-provider-directory/leave-requests",
+            "pages/employees/service-provider-directory/satisfaction-surveys",
+            "pages/employees/service-provider-directory/change-requests"
+          ]
+        },
+        {
+          "group": "Background Checks",
+          "pages": [
+            "pages/employees/background-checks/index",
+            "pages/employees/background-checks/guidelines-dps",
+            "pages/employees/background-checks/dps-checks",
+            "pages/employees/background-checks/federal-oig",
+            "pages/employees/background-checks/state-oig",
+            "pages/employees/background-checks/emr-nar",
+            "pages/employees/background-checks/sex-offender-registry",
+            "pages/employees/background-checks/drug-screening",
+            "pages/employees/background-checks/other-checks",
+            "pages/employees/background-checks/all-checks"
+          ]
+        },
+        {
+          "group": "Training and Education",
+          "pages": [
+            "pages/employees/training-and-education/index",
+            "pages/employees/training-and-education/inservice-calendar",
+            "pages/employees/training-and-education/inservice-tasks",
+            "pages/employees/training-and-education/timeline-calendar",
+            "pages/employees/training-and-education/training-videos",
+            "pages/employees/training-and-education/inservice-statistics",
+            "pages/employees/training-and-education/employee-recognition"
+          ]
+        },
+        {
+          "group": "Competency Assessments",
+          "pages": [
+            "pages/employees/competency-assessments/index",
+            "pages/employees/competency-assessments/clinical",
+            "pages/employees/competency-assessments/technical",
+            "pages/employees/competency-assessments/administrative",
+            "pages/employees/competency-assessments/safety",
+            "pages/employees/competency-assessments/other-assessments",
+            "pages/employees/competency-assessments/calendar",
+            "pages/employees/competency-assessments/performance-evaluation"
+          ]
+        },
+        {
+          "group": "Time and Attendance",
+          "pages": [
+            "pages/employees/time-and-attendance/index",
+            "pages/employees/time-and-attendance/evv-credentials",
+            "pages/employees/time-and-attendance/evv-resources",
+            "pages/employees/time-and-attendance/evv-usage-scores"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Task Manager",
+      "pages": [
+        "pages/task-manager/index",
+        "pages/task-manager/my-calendar",
+        "pages/task-manager/to-do",
+        "pages/task-manager/done",
+        "pages/task-manager/in-progress",
+        "pages/task-manager/all-my-tasks",
+        "pages/task-manager/all-agency-tasks",
+        "pages/task-manager/agency-archive",
+        "pages/task-manager/agency-calendar",
+        "pages/task-manager/task-automation",
+        "pages/task-manager/quick-kanban",
+        "pages/task-manager/email-to-task"
+      ]
+    },
+    {
+      "group": "Relations",
+      "pages": [
+        "pages/relations/index",
+        "pages/relations/support-tickets",
+        "pages/relations/on-call-management"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "pages/resources/index",
+        "pages/resources/bulk-import",
+        {
+          "group": "Tools & Utilities",
+          "pages": [
+            "pages/resources/tools-utilities/index",
+            "pages/resources/tools-utilities/qr-code-generator",
+            "pages/resources/tools-utilities/upload-bulk-records",
+            "pages/resources/tools-utilities/update-claims-availity",
+            "pages/resources/tools-utilities/officerridge-support",
+            "pages/resources/tools-utilities/product-updates",
+            "pages/resources/tools-utilities/important-identifiers",
+            "pages/resources/tools-utilities/asset-manager",
+            "pages/resources/tools-utilities/supplies",
+            "pages/resources/tools-utilities/member-maps",
+            "pages/resources/tools-utilities/employee-maps",
+            "pages/resources/tools-utilities/cost-center",
+            "pages/resources/tools-utilities/verify-routing-number",
+            "pages/resources/tools-utilities/verification-employment"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Reports",
+      "pages": [
+        "pages/reports/index",
+        "pages/reports/member-report",
+        "pages/reports/service-provider-reports",
+        "pages/reports/communications",
+        "pages/reports/email-delivery"
+      ]
+    },
+    {
+      "group": "Projects",
+      "pages": [
+        "pages/projects/index",
+        "pages/projects/dashboard",
+        "pages/projects/project-tasks",
+        "pages/projects/project-documents",
+        "pages/projects/project-meetings",
+        "pages/projects/project-budgets"
+      ]
+    },
+    {
+      "group": "Payroll",
+      "pages": [
+        "pages/payroll/index",
+        "pages/payroll/payroll-calendar",
+        "pages/payroll/payroll-reports",
+        "pages/payroll/pas-employees",
+        "pages/payroll/management-employees",
+        "pages/payroll/loans-advances",
+        "pages/payroll/contractor-hours",
+        "pages/payroll/unlinked-records"
+      ]
+    },
+    {
+      "group": "Claims & Billing",
+      "pages": [
+        "pages/claims-billing/index",
+        "pages/claims-billing/members",
+        "pages/claims-billing/claims",
+        "pages/claims-billing/action-items",
+        "pages/claims-billing/stats",
+        "pages/claims-billing/balances",
+        "pages/claims-billing/private-pay",
+        "pages/claims-billing/upload-claims",
+        "pages/claims-billing/claim-updates",
+        "pages/claims-billing/rs-reports"
+      ]
+    },
+    {
+      "group": "Management",
+      "pages": [
+        "pages/management/index",
+        {
+          "group": "Management Directory",
+          "pages": [
+            "pages/management/management-directory/index",
+            "pages/management/management-directory/all-management-staff",
+            "pages/management/management-directory/storage-locations",
+            "pages/management/management-directory/calendar",
+            "pages/management/management-directory/certification-identity"
+          ]
+        },
+        {
+          "group": "Background Checks",
+          "pages": [
+            "pages/management/background-checks/index"
+          ]
+        },
+        {
+          "group": "Training & Education",
+          "pages": [
+            "pages/management/training-education/index",
+            "pages/management/training-education/job-descriptions",
+            "pages/management/training-education/ceu-hours",
+            "pages/management/training-education/competency",
+            "pages/management/training-education/orientations",
+            "pages/management/training-education/inservice",
+            "pages/management/training-education/modules",
+            "pages/management/training-education/mentorships",
+            "pages/management/training-education/career-paths",
+            "pages/management/training-education/education",
+            "pages/management/training-education/certification",
+            "pages/management/training-education/leadership",
+            "pages/management/training-education/other"
+          ]
+        },
+        {
+          "group": "Competency Assessment",
+          "pages": [
+            "pages/management/competency-assessment/index"
+          ]
+        },
+        {
+          "group": "Health Management",
+          "pages": [
+            "pages/management/health-management/index",
+            "pages/management/health-management/vaccination-records",
+            "pages/management/health-management/hepatitis-b-consent",
+            "pages/management/health-management/tb-symptoms-survey",
+            "pages/management/health-management/tb-clearance",
+            "pages/management/health-management/flu-shots",
+            "pages/management/health-management/notifications",
+            "pages/management/health-management/other-documents"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Corporate",
+      "pages": [
+        "pages/corporate/index",
+        {
+          "group": "Documents",
+          "pages": [
+            "pages/corporate/documents/index",
+            "pages/corporate/documents/corporate-documents",
+            "pages/corporate/documents/annual-compliance-checklists",
+            "pages/corporate/documents/reminders",
+            "pages/corporate/documents/texas-secretary-state",
+            "pages/corporate/documents/texas-comptroller"
+          ]
+        },
+        {
+          "group": "Shareholders",
+          "pages": [
+            "pages/corporate/shareholders/index",
+            "pages/corporate/shareholders/shareholder-list",
+            "pages/corporate/shareholders/shareholder-meetings",
+            "pages/corporate/shareholders/shareholder-certificates",
+            "pages/corporate/shareholders/annual-notices"
+          ]
+        },
+        {
+          "group": "Committees",
+          "pages": [
+            "pages/corporate/committees/index",
+            "pages/corporate/committees/all-committees",
+            "pages/corporate/committees/governing-body",
+            "pages/corporate/committees/budget-committee",
+            "pages/corporate/committees/ethics-committee",
+            "pages/corporate/committees/pac-committee",
+            "pages/corporate/committees/qapi-committee",
+            "pages/corporate/committees/calendar",
+            "pages/corporate/committees/member-documents"
+          ]
+        },
+        "pages/corporate/important-identifiers"
+      ]
+    },
+    {
+      "group": "Licensing",
+      "pages": [
+        "pages/licensing/index",
+        {
+          "group": "License Tracking",
+          "pages": [
+            "pages/licensing/license-tracking/index",
+            "pages/licensing/license-tracking/licenses",
+            "pages/licensing/license-tracking/license-surveys",
+            "pages/licensing/license-tracking/survey-deficiencies",
+            "pages/licensing/license-tracking/licensing-documents",
+            "pages/licensing/license-tracking/license-correspondence",
+            "pages/licensing/license-tracking/accreditation",
+            "pages/licensing/license-tracking/renewals-in-progress",
+            "pages/licensing/license-tracking/calendar",
+            "pages/licensing/license-tracking/consultants"
+          ]
+        },
+        {
+          "group": "Surveys & Audits",
+          "pages": [
+            "pages/licensing/surveys-audits/index"
+          ]
+        },
+        {
+          "group": "Payer Management",
+          "pages": [
+            "pages/licensing/payer-management/index",
+            "pages/licensing/payer-management/available-payers",
+            "pages/licensing/payer-management/payer-contracts",
+            "pages/licensing/payer-management/correspondence",
+            "pages/licensing/payer-management/consultants",
+            "pages/licensing/payer-management/action-items",
+            "pages/licensing/payer-management/payer-contract-calendar",
+            "pages/licensing/payer-management/payer-contract-documents",
+            "pages/licensing/payer-management/hhsc-open-enrollment"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Operations",
+      "pages": [
+        "pages/operations/index",
+        {
+          "group": "CMS Compliance",
+          "pages": [
+            "pages/operations/cms-compliance/index"
+          ]
+        },
+        {
+          "group": "HIPAA Compliance",
+          "pages": [
+            "pages/operations/hipaa-compliance/index",
+            "pages/operations/hipaa-compliance/privacy-office-designation",
+            "pages/operations/hipaa-compliance/hipaa-policies",
+            "pages/operations/hipaa-compliance/hipaa-training",
+            "pages/operations/hipaa-compliance/risk-assessments",
+            "pages/operations/hipaa-compliance/hipaa-incidents",
+            "pages/operations/hipaa-compliance/business-associate-agreements",
+            "pages/operations/hipaa-compliance/hipaa-templates",
+            "pages/operations/hipaa-compliance/hipaa-audits",
+            "pages/operations/hipaa-compliance/compliance-checklists"
+          ]
+        },
+        {
+          "group": "Regulatory Reports",
+          "pages": [
+            "pages/operations/regulatory-reports/index"
+          ]
+        },
+        {
+          "group": "Fraud Prevention",
+          "pages": [
+            "pages/operations/fraud-prevention/index",
+            "pages/operations/fraud-prevention/fraud-incidents",
+            "pages/operations/fraud-prevention/fraud-prevention-compliance",
+            "pages/operations/fraud-prevention/fraud-prevention-training",
+            "pages/operations/fraud-prevention/fraud-prevention-monitoring",
+            "pages/operations/fraud-prevention/fraud-prevention-resources",
+            "pages/operations/fraud-prevention/fraud-prevention-audits"
+          ]
+        },
+        {
+          "group": "Incident Reporting",
+          "pages": [
+            "pages/operations/incident-reporting/index",
+            "pages/operations/incident-reporting/member-complaints",
+            "pages/operations/incident-reporting/member-incidents",
+            "pages/operations/incident-reporting/fraud-incidents",
+            "pages/operations/incident-reporting/hipaa-incidents",
+            "pages/operations/incident-reporting/workplace-injury-incidents",
+            "pages/operations/incident-reporting/home-hazard-incidents",
+            "pages/operations/incident-reporting/fall-incidents",
+            "pages/operations/incident-reporting/medication-incidents",
+            "pages/operations/incident-reporting/infection-control-incidents"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Finance",
+      "pages": [
+        "pages/finance/index",
+        {
+          "group": "Vendors",
+          "pages": [
+            "pages/finance/vendors/index",
+            "pages/finance/vendors/contracts",
+            "pages/finance/vendors/invoices",
+            "pages/finance/vendors/payments",
+            "pages/finance/vendors/business-associate-agreements"
+          ]
+        },
+        {
+          "group": "Budget",
+          "pages": [
+            "pages/finance/budget/index",
+            "pages/finance/budget/budgets",
+            "pages/finance/budget/capital-expenditure-plans",
+            "pages/finance/budget/strategic-business-plans"
+          ]
+        },
+        {
+          "group": "Cost Center",
+          "pages": [
+            "pages/finance/cost-center/index",
+            "pages/finance/cost-center/cost-reports",
+            "pages/finance/cost-center/loans",
+            "pages/finance/cost-center/attendant-wage-notices",
+            "pages/finance/cost-center/insurance-policies"
+          ]
+        },
+        {
+          "group": "Taxes",
+          "pages": [
+            "pages/finance/taxes/index",
+            "pages/finance/taxes/tax-filing-reports",
+            "pages/finance/taxes/tax-season-prep-checklist",
+            "pages/finance/taxes/business-tax-requirements",
+            "pages/finance/taxes/irs-documents",
+            "pages/finance/taxes/irs-correspondence",
+            "pages/finance/taxes/texas-workforce-commission",
+            "pages/finance/taxes/form-i9-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Emergency Prep",
+      "pages": [
+        "pages/emergency-prep/index",
+        "pages/emergency-prep/emergency-prep-guide",
+        {
+          "group": "Planning & Documents",
+          "pages": [
+            "pages/emergency-prep/planning-documents/index",
+            "pages/emergency-prep/planning-documents/emergency-prep-tasks",
+            "pages/emergency-prep/planning-documents/disaster-team",
+            "pages/emergency-prep/planning-documents/risk-assessment",
+            "pages/emergency-prep/planning-documents/emergency-prep-plan-review",
+            "pages/emergency-prep/planning-documents/contingency-plan",
+            "pages/emergency-prep/planning-documents/documents",
+            "pages/emergency-prep/planning-documents/business-continuity-plan",
+            "pages/emergency-prep/planning-documents/disaster-recovery",
+            "pages/emergency-prep/planning-documents/contacts",
+            "pages/emergency-prep/planning-documents/it-systems",
+            "pages/emergency-prep/planning-documents/weather"
+          ]
+        },
+        {
+          "group": "Drills Coordination",
+          "pages": [
+            "pages/emergency-prep/drills-coordination/index"
+          ]
+        },
+        {
+          "group": "Emergency Prep Resources",
+          "pages": [
+            "pages/emergency-prep/emergency-prep-resources/index",
+            "pages/emergency-prep/emergency-prep-resources/fema",
+            "pages/emergency-prep/emergency-prep-resources/cdc",
+            "pages/emergency-prep/emergency-prep-resources/texas-dshs"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "System",
+      "pages": [
+        "pages/subscription/index",
+        {
+          "group": "Agency Settings",
+          "pages": [
+            "pages/agency-settings/index",
+            "pages/agency-settings/organization-profile",
+            "pages/agency-settings/locations",
+            "pages/agency-settings/users",
+            "pages/agency-settings/role-management",
+            "pages/agency-settings/app-integration"
+          ]
+        }
+      ]
+    }
+  ],
+  "footerSocials": {
+    "website": "https://officeridge.com",
+    "linkedin": "https://linkedin.com/company/officeridge",
+    "twitter": "https://twitter.com/officeridge"
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-XXXXXXXXXX"
+    }
+  },
+  "feedback": {
+    "suggestEdit": true,
+    "raiseIssue": true,
+    "thumbsRating": true
+  }
+}

@@ -1,0 +1,75 @@
+﻿---
+title: Members Module
+description: Comprehensive member lifecycle management from intake to discharge
+---
+
+# Members Module
+
+> ⚠️ **Read-Only Documentation Notice**  
+> This page was generated through passive observation of publicly accessible UI elements. No data was injected, submitted, or modified during documentation creation.
+
+## Overview
+
+The Members module provides end-to-end management of healthcare recipients ("members"), including admission workflows, care planning, service authorization, patient experience tracking, and discharge coordination.
+
+## Module Structure
+
+```mermaid
+graph TD
+    Members --> MemberDirectory
+    Members --> CareAssessment
+    Members --> PatientExperience
+    
+    MemberDirectory --> MD1[Members List]
+    MemberDirectory --> MD2[Authorizations]
+    MemberDirectory --> MD3[Charts & Documents]
+    
+    CareAssessment --> CA1[Care Plans]
+    CareAssessment --> CA2[Risk Assessments]
+    CareAssessment --> CA3[Discharge Planning]
+    
+    PatientExperience --> PE1[Engagement Tracking]
+    PatientExperience --> PE2[Complaints & Incidents]
+    PatientExperience --> PE3[Satisfaction Surveys]
+
+Key Capabilities
+Sub-Module
+Primary Function
+Critical Workflows
+Member Directory
+Central registry of all members
+New admission intake, status tracking, document management
+Care and Assessment
+Clinical planning & evaluation
+Care plan creation, risk scoring, physician coordination
+Patient Experience
+Quality & satisfaction monitoring
+Feedback collection, complaint resolution, eligibility verification
+Access Patterns
+<Tabs>
+<Tab title="Clinical Staff">
+Full access to Care Plans, Assessments, Patient Experience; read-only access to financial/authorization data.
+</Tab>
+<Tab title="Administrative Staff">
+Full access to Member Directory, Authorizations, Communications; limited clinical data access.
+</Tab>
+<Tab title="Billing Team">
+Read-only member demographics; full access to authorization and payer-related tabs.
+</Tab>
+</Tabs>
+
+Data Governance
+<Callout type="warning">
+All member data is considered PHI under HIPAA. Access is logged, role-restricted, and subject to minimum necessary principles. Export functions require additional approval workflows.
+</Callout>
+
+Integration Points
+
+External Referrals: Patient Experience → External Referrals connects to partner agency systems
+Eligibility Verification: Real-time payer status checks via integrated APIs
+EVV (Electronic Visit Verification): Time & attendance data syncs with member service records
+Next Steps
+Member Directory Overview
+Care Plans Workflow
+Patient Engagement Tracking
+Last updated: 2026-05-31 • Generated via read-only observation

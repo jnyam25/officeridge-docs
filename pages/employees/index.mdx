@@ -1,0 +1,60 @@
+﻿---
+title: Employees Module
+description: Workforce management covering recruitment, compliance, training, and attendance
+---
+
+# Employees Module
+
+> ⚠️ **Read-Only Documentation Notice**  
+> This page was generated through passive observation of publicly accessible UI elements. No data was injected, submitted, or modified during documentation creation.
+
+## Overview
+
+The Employees module manages the complete lifecycle of healthcare staff ("service providers"), from recruitment and background verification through ongoing training, competency assessment, and time tracking.
+
+## Module Structure
+
+```mermaid
+graph TD
+    Employees --> ProviderDirectory
+    Employees --> BackgroundChecks
+    Employees --> TrainingEducation
+    Employees --> CompetencyAssessments
+    Employees --> TimeAttendance
+    
+    BackgroundChecks --> BC1[DPS Checks]
+    BackgroundChecks --> BC2[Federal OIG]
+    BackgroundChecks --> BC3[Drug Screening]
+    
+    TrainingEducation --> TE1[Inservice Calendar]
+    TrainingEducation --> TE2[Training Videos]
+    TrainingEducation --> TE3[Employee Recognition]
+
+Compliance Framework
+<Callout type="warning">
+Employee records contain sensitive PII and credential data. Access follows role-based permissions with audit logging. Background check results are stored separately from personnel files per FCRA requirements.
+</Callout>
+
+Key Workflows 
+|Workflow |Primary Module
+Critical Steps
+New Hire Onboarding
+Service Provider Directory
+Application → Background Checks → Orientation → Credential Upload → Active Status
+Annual Compliance Renewal
+Background Checks + Training
+OIG Re-check → CEU Completion → Competency Re-assessment → Record Update
+Time & Attendance Tracking
+Time and Attendance
+EVV Clock-in → Service Verification → Hours Approval → Payroll Sync
+
+Integration Points
+EVV (Electronic Visit Verification): Time Attendance syncs with member service records
+Licensing Module: Staff credentials validate against agency license requirements
+Payroll Module: Approved hours flow to payroll processing with audit trail
+
+Next Steps
+Service Provider Directory
+Background Check Workflow
+Training Calendar Management
+Last updated: 2026-05-31 • Generated via read-only observation

@@ -1,0 +1,81 @@
+---
+title: Federal OIG Checks
+description: Screen staff against federal exclusion lists
+---
+
+import { Callout, Tabs, Steps } from '@/components';
+
+# Federal OIG Checks
+
+> ⚠️ **Read-Only Documentation Notice**  
+> This page was generated through passive observation of publicly accessible UI elements. No data was injected, submitted, or modified during documentation creation.
+
+## Overview
+
+Automated screening of employees and contractors against the HHS Office of Inspector General List of Excluded Individuals/Entities (LEIE).
+
+## Key Features
+
+<Tabs>
+  <Tab title="Functionality">
+    - Bulk upload staff identifiers
+    - Scheduled re-screening (monthly/quarterly)
+    - Alert on new exclusions
+    - Documentation for audit trails
+  </Tab>
+  <Tab title="User Roles">
+    - HR/Compliance: Full access
+    - Management: Read + Alert config
+    - Others: No access
+  </Tab>
+  <Tab title="Related Modules">
+    State OIG, DPS Checks, Drug Screening
+  </Tab>
+</Tabs>
+
+## Workflow
+
+<Steps>
+  <Step title="Access">
+    Employees → Background Checks → Federal OIG tab
+  </Step>
+  <Step title="Primary Actions">
+    Upload CSV of staff IDs; Configure screening frequency; Review match results; Document resolution
+  </Step>
+  <Step title="Outputs">
+    Screening completion report; Exclusion match alert; Compliance attestation document
+  </Step>
+</Steps>
+
+## UI Elements Observed
+
+| Element | Type | Purpose | Notes |
+|---------|------|---------|-------|
+| Match Status Indicator | Visual badge | Show screening result | Green=Clear, Red=Match, Yellow=Pending Review |
+| Resolution Workflow | Guided form | Document investigation steps | Required fields for compliance |
+
+## Compliance & Security
+
+<Callout type="info">
+  OIG screening is required for Medicaid/Medicare providers. All screenings and resolutions must be documented per 42 CFR §1001. Records retained 10 years.
+</Callout>
+
+## Troubleshooting
+
+| Issue | Resolution |
+|-------|------------|
+| Upload fails | Verify CSV format matches template; Check file size &lt;10MB; Ensure no special characters in names |
+
+## Related Documentation
+
+<Tabs>
+  <Tab title="Related Docs">
+    - [State OIG](./state-oig)
+    - [DPS Checks](./dps-checks)
+    - Compliance Checklists (see the HIPAA Compliance section)
+  </Tab>
+</Tabs>
+
+---
+
+*Last updated: 2026-05-31 • Generated via read-only observation*

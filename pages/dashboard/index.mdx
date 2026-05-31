@@ -1,0 +1,102 @@
+﻿---
+title: Dashboard Overview
+description: Central landing page with member statistics, employee metrics, and quick actions
+---
+
+# Dashboard Overview
+
+> ⚠️ **Read-Only Documentation Notice**  
+> This page was generated through passive observation of publicly accessible UI elements. No data was injected, submitted, or modified during documentation creation.
+
+## Overview
+
+The Dashboard serves as the central landing page after authentication, providing at-a-glance visibility into key operational metrics across member care and employee management domains.
+
+## Key Sections Observed
+
+### Member Statistics Panel
+- Total active members count
+- New admissions (30-day window)
+- Discharge pending indicators
+- Authorization status summary
+- Care plan compliance metrics
+
+### Employee Statistics Panel
+- Active staff count by role
+- Upcoming certification expirations
+- Training completion rates
+- Time & attendance alerts
+- Background check status summary
+
+## Navigation Shortcuts
+
+| Quick Action | Destination | Role Access |
+|--------------|-------------|-------------|
+| 📋 New Admission | Members → Member Directory → New Admission | Admin, Clinical |
+| 👤 Add Staff | Employees → Service Provider Directory | Admin, HR |
+| ✅ Complete Task | Task Manager → To Do | All authenticated |
+| 📊 Generate Report | Reports → Member Report | Admin, Management |
+| ⚠️ Report Incident | Operations → Incident Reporting | All authenticated |
+
+## UI Elements Observed
+
+| Element | Type | Purpose | Notes |
+|---------|------|---------|-------|
+| Member Stats Card | Metric widget | Display member KPIs | Click-through to detailed reports |
+| Employee Stats Card | Metric widget | Display workforce KPIs | Color-coded alerts for expirations |
+| Quick Actions Bar | Button group | Common workflow entry points | Role-based visibility |
+| Recent Activity Feed | List component | Show latest system events | Timestamped, user-attributed |
+| Notification Bell | Icon button | Alert center access | Badge count for unread items |
+
+## Role-Based Views
+
+<Tabs>
+  <Tab title="Administrator">
+    Full visibility across all modules; access to Agency Settings, role management, and system configuration.
+  </Tab>
+  <Tab title="Clinical Staff">
+    Focus on Member modules, Care Plans, Patient Experience; limited access to employee/financial data.
+  </Tab>
+  <Tab title="Finance/Billing">
+    Priority access to Claims, Payroll, Vendor modules; read-only access to member demographic data.
+  </Tab>
+  <Tab title="Compliance Officer">
+    Enhanced visibility into Licensing, HIPAA, Fraud Prevention, and Audit modules.
+  </Tab>
+</Tabs>
+
+## Data Refresh Behavior
+
+- Statistics panels auto-refresh every 15 minutes during active sessions
+- Manual refresh available via pull-to-refresh gesture or refresh icon
+- Real-time indicators show "Last updated: [timestamp]"
+
+## Compliance & Security
+
+<Callout type="info">
+  Dashboard displays aggregate, de-identified metrics by default. Access to PHI (Protected Health Information) requires explicit role permissions and is logged per HIPAA audit requirements. All dashboard interactions are recorded in the system audit trail.
+</Callout>
+
+## Troubleshooting
+
+| Issue | Resolution |
+|-------|-----------|
+| Stats not loading | Check network connection; verify role permissions; contact admin if persistent |
+| Missing quick actions | Confirm role assignment in Agency Settings → Role Management |
+| Outdated metrics | Use manual refresh; check system status page for sync delays |
+
+## Related Documentation
+
+<Tabs>
+  <Tab title="Related Docs">
+    - [Member Statistics Detail](./member-statistics)
+    - [Employee Statistics Detail](./employee-statistics)
+    - [Role Management](../agency-settings/role-management)
+    - [Audit Logging](../operations/hipaa-compliance/hipaa-audits)
+  </Tab>
+</Tabs>
+
+---
+
+*Last updated: 2026-05-31 • Generated via read-only observation*
+
