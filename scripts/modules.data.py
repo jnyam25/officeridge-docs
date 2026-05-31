@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Complete MODULES dictionary for Enterprise Healthcare Platform documentation
 Generated from read-only UI observation - No data injection performed

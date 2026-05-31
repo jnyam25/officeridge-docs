@@ -3,8 +3,8 @@
   "name": "OfficeRidge Platform Docs",
   "theme": "mint",
   "logo": {
-    "dark": "logos/OfficeRidge_Logo_Primary_HD.png",
-    "light": "logos/OfficeRidge_Logo_Primary_HD.png"
+    "dark": "logo/OfficeRidge_Logo_Primary_HD_2.png",
+    "light": "logo/OfficeRidge_Logo_Primary_HD.png"
   },
   "favicon": "/favicon.ico",
   "colors": {
