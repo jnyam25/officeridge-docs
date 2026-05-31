@@ -1,6 +1,7 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "OfficeRidge Platform Docs",
+  "theme": "mint",
   "logo": {
     "dark": "logos/OfficeRidge_Logo_Primary_HD.png",
     "light": "logos/OfficeRidge_Logo_Primary_HD.png"
